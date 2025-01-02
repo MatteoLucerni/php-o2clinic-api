@@ -1,0 +1,9 @@
+<?php
+// Database connection parameters
+$servername = "https://ewfwefew.wefwef.it/";
+$username = "username";
+$password = "password";
+$dbname = "name";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);

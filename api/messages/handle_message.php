@@ -7,14 +7,7 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-// Database connection parameters
-$servername = "localhost";
-$username = "your_username";
-$password = "your_password";
-$dbname = "your_database";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+require 'db/conn.php.php';
 
 // Check connection
 if ($conn->connect_error) {
