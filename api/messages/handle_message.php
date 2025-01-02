@@ -7,7 +7,7 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-require 'db/conn.php.php';
+require '../../db/conn.php';
 
 // Check connection
 if ($conn->connect_error) {
